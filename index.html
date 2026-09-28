@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURELIA — Luxury Haute Cuisine & Reservations</title>
+    <meta name="description" content="An elevated dining experience. Contemporary culinary artistry, seasonal tasting menus, private dining, and seamless table reservations." />
+    <meta property="og:title" content="AURELIA — Luxury Haute Cuisine & Reservations" />
+    <meta property="og:description" content="An elevated dining experience. Contemporary culinary artistry, seasonal tasting menus, private dining, and seamless table reservations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AURELIA — Luxury Haute Cuisine & Reservations" />
+    <meta name="twitter:description" content="An elevated dining experience. Contemporary culinary artistry, seasonal tasting menus, private dining, and seamless table reservations." />
+    <!-- Google Fonts for Luxury Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Aurelia Dining",
+      "image": "/hero_main.png",
+      "servesCuisine": "Contemporary French & Nordic Haute Cuisine",
+      "priceRange": "$$$$",
+      "telephone": "+1-212-555-0198",
+      "email": "concierge@aurelia-dining.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "442 Mayfair Boulevard",
+        "addressLocality": "Manhattan",
+        "addressRegion": "NY",
+        "postalCode": "10021",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
+          "opens": "17:30",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "17:00",
+          "closes": "00:00"
+        }
+      ],
+      "acceptsReservations": "True"
+    }
+    </script>
+  </head>
+  <body class="bg-[#0D0D0E] text-[#F5F2EB] selection:bg-[#C5A880]/30 selection:text-[#FFF] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,20 @@
+# Render Blueprint for the Aurelia Platform (single web service).
+# Secrets are NOT defined here — configure them in the Render dashboard
+# (Environment Groups / service Environment Variables).
+services:
+  - type: web
+    name: aurelia-platform
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20"
+      # Provide via Render dashboard: MONGODB_URI, SESSION_SECRET,
+      # ADMIN_AUTH_EMAIL, ADMIN_PASSWORD, CONTACT_NOTIFICATION_EMAIL,
+      # EMAIL_API_KEY, EMAIL_FROM, CLOUDINARY_CLOUD_NAME,
+      # CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET
